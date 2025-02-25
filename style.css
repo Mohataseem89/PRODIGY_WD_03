@@ -1,0 +1,52 @@
+
+body{
+    background-image: url('bg1.jpg');
+}
+
+#containerr{
+    
+    width: 480px;
+    height: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    /* padding: 0; */
+}
+
+#gameover{
+    display: none;
+    font-size: 30px;
+}
+
+.square{
+    border: 1px solid black;
+    text-align: center;
+    resize: none;
+    width: 30%;
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .square:hover{
+    cursor: pointer;
+} */
+
+.square p{
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.notcclicked:hover{
+    background-color: gray;
+    /* cursor: pointer; */
+}
+
+h1{
+    text-align: center;
+    /* font-size: 50px; */
+}

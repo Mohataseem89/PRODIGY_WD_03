@@ -29,10 +29,6 @@ function wongame(){
         ){
             return true;
         }
-        // if(squareArray[a] && squareArray[a] === squareArray[b] && squareArray[b] === squareArray[c]){
-        //     gameOver(`Player ${squareArray[a]} wins!`);
-        //     return;
-        // }
     }
     return false;
 }
@@ -44,12 +40,6 @@ function isdraw(){
         if(state === "") shouldReturn = false;
     });
     return shouldReturn;
-    // for(let i = 0; i < squareArray.length; i++){
-    //     if(squareArray[i].state === ""){
-    //         shouldReturn = false;
-    //         break;
-    //     }
-    // }
 }
 
 
@@ -72,18 +62,7 @@ class classsquare {
         if (isdraw())return gameOver("it is a draw");
 
         nextMove == "X" ? nextMove = "O" : nextMove = "X";
-        // if(wongame()){
-            //     gameOver(`Player ${nextMove} wins!`);
-            // if(isdraw())return gameOver("draw");
     }
-    // constructor(index){
-    //     this.index = index;
-    //     this.state = "";
-    //     this.div = document.createElement('div');
-    //     this.div.className = "square";
-    //     this.div.addEventListener('click', () => this.handleClick());
-    //     container.appendChild(this.div);
-    // }
 }
 
 
@@ -99,10 +78,5 @@ for (let index = 0; index < 9; index++){
     container.appendChild(div);
     squareArray.push(square);
 
-    // const square = new classsquare(document.createElement('div'), index);
-    // square.element.className = "square notclicked";
-    // square.element.onclick = () => square.clicked();
-    // squareArray.push(square);
-    // container.appendChild(square.element);
 }
 console.log(squareArray);
